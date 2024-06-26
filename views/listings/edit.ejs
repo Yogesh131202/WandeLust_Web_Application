@@ -3,7 +3,7 @@
     <div class="row mt-2">
         <div class="col-8 offset-2">
             <h3>Edit your Listing:</h3>
-            <form method="POST" action="/listings/<%= listing._id %>?_method=PUT" class="needs-validation" novalidate >
+            <form method="POST" action="/listings/<%= listing._id %>?_method=PUT" class="needs-validation" novalidate enctype="multipart/form-data">
             <div class="mb-3">
                  <label for="title" class="form-label">Title</label>
                  <input name="listing[title]" value="<%= listing.title %>" type="text" class="form-control" required>
@@ -15,9 +15,12 @@
                  <div class="invalid-feedback">Please enter a short description </div>
             </div>
             <div class="mb-3">
-                <label for="image" class="form-label">Image Link</label>
-                <input name="listing[image]" value="<%= listing.image %>" class="form-control" required>
-                <div class="invalid-feedback">image should be must</div>
+                Original Listing Image <br>
+                <img src="<%= originalImageUrl %>" >
+            </div>
+            <div class="mb-3">
+                <label for="image" class="form-label">Upload New Image </label>
+                <input name="listing[image]" type="file" class="form-control" >
             </div>
             <div class="row">
                 <div class="mb-3 col-md-4">
@@ -40,30 +43,6 @@
             <button class="btn btn-dark edit-btn mt-3 mb-5">Edit</button>
 
             </form>
-
-             <!-- javascript code // script.js -->
-             <script>/// form validation with bootstraps // script.js code
-
-                // Example starter JavaScript for disabling form submissions if there are invalid fields
-                 (function () {
-                    'use strict'
-              
-                    // Fetch all the forms we want to apply custom Bootstrap validation styles to
-                    var forms = document.querySelectorAll('.needs-validation')
-              
-                    // Loop over them and prevent submission
-                    Array.prototype.slice.call(forms)
-                    .forEach(function (form) {
-                     form.addEventListener('submit', function (event) {
-                        if (!form.checkValidity()) {
-                          event.preventDefault()
-                          event.stopPropagation()
-                       }
-                      form.classList.add('was-validated')
-                    }, false)
-                  })
-              })()
-              </script>
         </div>
     </div>
 </body>
