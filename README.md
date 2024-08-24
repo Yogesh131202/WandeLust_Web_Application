@@ -21,8 +21,7 @@ Welcome to WanderLust, a full-stack web application designed to cater to the nee
   
 **2. Dynamic Category Navigation**
 - **Scrollable Categories:** Users can browse through various property categories like apartments, villas, hostels, and more using a dynamic, scrollable interface.
-- **Filter and Search:** Advanced filtering options allow users to narrow down their search based on location, price, amenities, and ratings.
-  
+
 **3. Property Listings**
 - **Detailed Property Pages:** Each property has a dedicated page with detailed information, including images, descriptions, amenities, and pricing.
 - **Map Integration:** An interactive map displays the location of the property, allowing users to see nearby attractions and points of interest.
@@ -101,17 +100,12 @@ npm start
 - **New Users:** Register by providing your email, password, and other required details.
 - **Returning Users:** Log in with your email and password to access your account.
 
-**Browsing Properties**
-- **Explore Categories:** Use the scrollable category menu to find properties based on type (e.g., apartments, villas).
-- **Search:** Use the search bar to find properties based on location, price range, or specific amenities.
-
 **Viewing Property Details**
 - **Property Page:** Click on a property to view detailed information, including images, descriptions, amenities, and pricing.
 - **Map View:** Use the embedded map to explore the property's location and nearby attractions.
 
 **Booking a Property**
 - **Price Calculation:** Choose the desired dates and view the total price, including GST.
-- **Confirmation:** Proceed to booking confirmation, where you'll receive a summary of your booking details.
 
 **Leaving Reviews**
 - **Rate Your Stay:** After your stay, leave a review and rate the property to help future travelers.
@@ -228,7 +222,7 @@ The database is designed to efficiently manage users, properties, and reviews. B
   
 **Interactive Map Integration**
 - **Challenge:** Displaying property locations on a map and allowing users to explore nearby points of interest.
-- **Solution:** Integrated Google Maps API, customizing it to display property markers and handle user interactions efficiently.
+- **Solution:** Integrated Mapbox API, customizing it to display property markers and handle user interactions efficiently.
 
 **User Authentication and Security**
 - **Challenge:** Ensuring secure user authentication while maintaining a user-friendly experience.
