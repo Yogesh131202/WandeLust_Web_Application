@@ -234,7 +234,7 @@ The database is designed to efficiently manage users, properties, and reviews. B
 - **Challenge:** Ensuring secure user authentication while maintaining a user-friendly experience.
 - **Solution:** Implemented Passport.js for robust authentication and used bcrypt to securely hash passwords. Sessions are managed using cookies with secure and HttpOnly flags.
 
-**Future Enhancements**
+## Future Enhancements
 - **Booking System:** Implement a full-featured booking system, allowing users to reserve properties directly through the platform.
 - **Payment Integration:** Add payment gateway integration for secure online transactions.
 - **Enhanced Search Filters:** Introduce more advanced filters, such as property ratings, distance from landmarks, and availability during specific dates.
